@@ -71,10 +71,11 @@
      transition: background-color 0.5s ease;
  }
 
+  @media (min-width: 768px){
  .hover-effect:hover {
-     background-color: rgb(243, 204, 238);
+     background-color: rgb(208, 195, 206);
  }
-
+  }
  .sections img {
      display: block;
      margin: 0 auto;
