@@ -1,0 +1,200 @@
+ :root {
+     --background-color: rgb(240, 228, 235);
+     --main-color: rgb(45, 1, 40);
+     --color-text-light: rgb(229, 233, 218);
+     --color-highlight: rgb(115, 3, 102);
+     --main-font: 'Bricolage Grotesque', sans-serif;
+
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: var(--background-color);
+ }
+
+ .head {
+     padding: 20px;
+     background-color: var(--main-color);
+ }
+
+ .name {
+     font-family: var(--main-font);
+     color: var(--color-text-light);
+     padding: 10px;
+     text-align: center;
+
+ }
+
+ .description {
+     font-family: 'Source Serif 4', serif;
+     color: var(--color-text-light);
+     text-align: center;
+ }
+
+ .menu {
+     height: 50px;
+     background-color: var(--main-color);
+     margin-bottom: 50px;
+     font-family: var(--main-font);
+     align-items: center;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 20px;
+     color: var(--color-text-light);
+     position: sticky;
+     top: 0;
+     z-index: 1;
+ }
+
+ .menu a {
+     text-decoration: none;
+     color: var(--color-text-light);
+     transition: color 0.3s ease;
+ }
+
+ .menu a:hover {
+     color: var(--color-highlight);
+ }
+
+ .sections {
+     background-color: white;
+     width: 60%;
+     padding: 20px;
+     margin: 20px auto;
+     border: 1px solid var(--main-color);
+     transition: background-color 0.5s ease;
+ }
+
+ .hover-effect:hover {
+     background-color: rgb(243, 204, 238);
+ }
+
+ .sections img {
+     display: block;
+     margin: 0 auto;
+
+     margin-top: 20px;
+     border-radius: 50%;
+ }
+
+ .section-title {
+     font-family: var(--main-font);
+     color: var(--main-color);
+     margin-bottom: 20px;
+ }
+
+
+ .content-text {
+     font-family: var(--main-font);
+     color: var(--main-color);
+     margin: 20px;
+     padding: 5px;
+     line-height: 1.6;
+ }
+
+
+ li {
+     margin-bottom: 10px;
+ }
+
+
+ .edu-table {
+     font-family: var(--main-font);
+     color: var(--main-color);
+     margin: 20px auto 0;
+     border-collapse: collapse;
+     width: 95%;
+     max-width: 95%;
+ }
+
+
+ .edu-table th {
+     background-color: var(--background-color);
+     color: var(--main-color);
+     padding: 10px;
+     text-align: center;
+     border: 2px solid gray;
+     overflow-wrap: anywhere;
+
+ }
+
+ .edu-table td {
+     border: 2px solid gray;
+     padding: 10px;
+
+ }
+
+ .content-text h3 {
+     margin-left: -20px;
+     font-family: var(--main-font);
+     color: var(--color-highlight);
+     margin-bottom: 10px;
+ }
+
+ .button-label {
+     font-family: var(--main-font);
+     color: var(--main-color);
+     margin-bottom: 3px;
+     display: block;
+     margin-top: 10px;
+ }
+
+ .button {
+     font-family: var(--main-font);
+     background-color: var(--main-color);
+     width: 30%;
+     height: 40px;
+     padding: 5px;
+     margin: 15px;
+     color: var(--color-text-light);
+     overflow-wrap: anywhere;
+
+ }
+
+ .button:hover {
+     background-color: var(--color-highlight);
+     cursor: pointer;
+ }
+
+ .footer {
+     font-family: var(--main-font);
+     background-color: var(--main-color);
+     color: var(--color-text-light);
+     height: 50px;
+     text-align: center;
+ }
+
+ .title-box {
+     width: 20%;
+     height: 30px;
+     padding: 5px;
+     border: 1px solid gray;
+ }
+
+ .title-box:focus {
+     outline: none;
+     border: 2px solid var(--color-highlight);
+ }
+
+ .message-box {
+     width: 70%;
+     height: 200px;
+     padding: 5px;
+     border: 1px solid gray;
+ }
+
+ .message-box:focus {
+     outline: none;
+     border: 2px solid var(--color-highlight);
+ }
+
+ .footer-text {
+     padding: 10px;
+ }
+

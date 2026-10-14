@@ -1,127 +1,173 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 	<meta charset="UTF-8" />
 	<title> about me </title>
-	
+	<link rel="stylesheet" href="style.css" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
- <header>
-	<h1> Laial Issa </h1>
-	<p> Computer Science Apprenticeship Student </p>
-	<nav>
-		<ul>
-		<li> <a href = "#aboutMe"> About me </a> </li>
-		<li> <a href = "#interests"> Interests  </a> </li>
-		<li> <a href = "#education"> Education  </a> </li>
-		<li> <a href = "#academicActivities"> Academic Activities  </a> </li>
-		<li> <a href = "#Projects"> Projects </a> </li>
-		<li> <a href = "#contactMe"> Contact Me  </a> </li>
-	</ul>
-	</nav>	
- </header>
+	<header>
+		<div class="head">
+			<h1 class="name">Laial Issa </h1>
+			<p class="description"> Computer Science Apprenticeship Student </p>
+		</div>
+	</header>
+	<nav class="menu">
 
- <main>
+		<a href="#aboutMe"> About me </a>
+		<a href="#interests"> Interests </a>
+		<a href="#education"> Education </a>
+		<a href="#academicActivities"> Academic Activities </a>
+		<a href="#Projects"> Projects </a>
+		<a href="#contactMe"> Contact Me </a>
 
-	<section>
-		<h1 id="aboutMe"> About me </h1>
-		<p> I am Laial Issa, a Computer Science Apprenticeship student at An-Najah National University. My academic and technical interests focus on software development, programming, web development, and artificial intelligence. </p>
-		<img src="https://static.vecteezy.com/system/resources/thumbnails/048/926/084/small/silver-membership-icon-default-avatar-profile-icon-membership-icon-social-media-user-image-illustration-vector.jpg" alt="profile image" width="300" />
-	</section>
+	</nav>
 
-    <section>
-    	<h1 id="interests" > Interests </h1>
-    	<ul>
-    		<li>Programming</li>
-    		<li>Problem Solving</li>
-    		<li>Learning new technologies</li>
-    		<li>Web Development</li>
-    		<li>Artificial Intelligence</li>
-    	</ul>
-    </section>
 
-    <section>
-    	<h1 id="education" > Education </h1>
-    	<table border = "1px solid green;">
-    		<thead>
-    			<tr> 
-    				<th>Degree</th>
-    				<th>Program</th>
-    				<th>University</th>
-    				<th>Department</th>
-    				<th>Country</th>
-    				<th>Period</th>
-    			</tr>
-    		</thead>
 
-    		<tbody>
-    			<tr> <td> PhD </td> <td>....</td> <td>....</td> <td>....</td> <td>....</td> <td>....</td> </tr>
-    			<tr> <td> Master </td> <td>....</td> <td>....</td> <td>....</td> <td>....</td> <td>....</td> </tr>
-    			<tr> <td> Bachelor </td> <td>Computer Science Apprenticeship</td> <td>An-Najah National University</td> <td>Department of IT</td> <td> Palestine </td> <td>2025-Present</td> </tr>	
-    		</tbody>
-    	</table>
-    </section>
+	<main>
 
-    <section>
-	     <h1 id="academicActivities"> Academic Activities </h1>
-	     <ol>
-		    <li>Problem Solving</li>
-		    <li>Artificial Intelligence</li>
-		    <li>Data Structures</li>
-		    <li>Web Development</li>
-		    <li>Software Development</li>
-	     </ol>
-    </section>
+		<section class="sections hover-effect">
+			<h1 class="section-title" id="aboutMe"> About me </h1>
+			<hr />
+			<p class="content-text"> I am Laial Issa, a Computer Science Apprenticeship student at An-Najah National
+				University. My academic and technical interests focus on software development, programming, web
+				development, and artificial intelligence. </p>
+			<img src="https://static.vecteezy.com/system/resources/thumbnails/048/926/084/small/silver-membership-icon-default-avatar-profile-icon-membership-icon-social-media-user-image-illustration-vector.jpg"
+				alt="profile image" width="300" />
+		</section>
 
-    <section>
-	   <h1 id="Projects"> Projects </h1>
-            <article>
-     	       <h2> Heart Attack Probability Analysis </h2>
-     	       <p> Developed a Python project to analyze heart attack data and calculate probabilities using conditional probability, intersection probability, and Bayes' rule. </p>
-            </article>
+		<section class="sections hover-effect">
+			<h1 class="section-title" id="interests"> Interests </h1>
+			<hr id="h2" />
+			<ul class="content-text">
+				<li>Programming</li>
+				<li>Problem Solving</li>
+				<li>Learning new technologies</li>
+				<li>Web Development</li>
+				<li>Artificial Intelligence</li>
+			</ul>
+		</section>
 
-            <article>
-     	        <h2> Order Processing DFA </h2>
-             	<p> Designed and implemented a Deterministic Finite Automaton (DFA) to represent an order processing system with states such as CART, CHECKOUT, PAID, CANCELLED, and REJECTED. </p>
-            </article>
+		<section class="sections hover-effect">
+			<h1 class="section-title" id="education"> Education </h1>
+			<hr />
+			<table class="edu-table" border="1px solid green;">
+				<thead>
+					<tr>
+						<th>Degree/level</th>
+						<th>Program</th>
+						<th>University/school</th>
+						<th>Country</th>
+						<th>Period</th>
+					</tr>
+				</thead>
 
-            <article>
-            	<h2> C++ Problem Solving </h2>
-               	<p> Developed C++ solutions for programming problems using STL data structures and algorithms, including vectors, pairs, maps, and sets. </p>
-            </article>
-    </section>
+				<tbody>
+					<tr>
+						<td> Bachelor </td>
+						<td>Computer Science Apprenticeship</td>
+						<td>An-Najah National University</td>
+						<td> Palestine </td>
+						<td>2025-Present</td>
+					</tr>
+					<tr>
+						<td> High School </td>
+						<td>Al-Adawiya Secondary School</td>
+						<td>Secondary Education</td>
+						<td>Palestine</td>
+						<td> 2023-2025 </td>
+					</tr>
+					<tr>
+						<td> Primary School </td>
+						<td>Halima Khreisha School</td>
+						<td>Primary Education</td>
+						<td>Palestine</td>
+						<td> 2017-2023 </td>
+					</tr>
+					<tr>
+						<td> Preparatory School </td>
+						<td>Shaker Khreisha School</td>
+						<td>Basic Education</td>
+						<td>Palestine</td>
+						<td> 2014-2017 </td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
 
-    <section>
-	       <h1 id="contactMe"> Contact me </h1>
-	       <form action="/oo" method="post">
-		    	<div>
-	         	  <label for="title"> Title: </label>
-	            </div>
-     		    <div>
-    	     	   <input type = "text" id="title" name="title" required>
-    		    </div>
-    		    <br>
-	    	    <div>
-                   <label for="message"> Message: </label>
-		        </div>
-		        <div>
-		           <input type = "text" id="message" name="message" required>
-	            </div>
-	            <br>
+		<section class="sections hover-effect">
+			<h1 class="section-title" id="academicActivities"> Academic Activities </h1>
+			<hr />
+			<ol class="content-text">
+				<li>Problem Solving</li>
+				<li>Artificial Intelligence</li>
+				<li>Data Structures</li>
+				<li>Web Development</li>
+				<li>Software Development</li>
+			</ol>
+		</section>
 
-		        <button type="submit"> send message </button>
-		        <button type ="reset"> reset </button>
-	       </form>
-    </section>
+		<section class="sections hover-effect">
+			<h1 class="section-title" id="Projects"> Projects </h1>
+			<hr />
+			<article class="content-text">
+				<h3> Heart Attack Probability Analysis </h3>
+				<p> Developed a Python project to analyze heart attack data and calculate probabilities using
+					conditional probability, intersection probability, and Bayes' rule. </p>
+			</article>
 
- </main>
+			<article class="content-text">
+				<h3> Order Processing DFA </h3>
+				<p> Designed and implemented a Deterministic Finite Automaton (DFA) to represent an order processing
+					system with states such as CART, CHECKOUT, PAID, CANCELLED, and REJECTED. </p>
+			</article>
 
- <footer>
-    <h4> © 2026 Laial Issa </h4>
- </footer>
+			<article class="content-text">
+				<h3> C++ Problem Solving </h3>
+				<p> Developed C++ solutions for programming problems using STL data structures and algorithms, including
+					vectors, pairs, maps, and sets. </p>
+			</article>
+		</section>
+
+		<section class="sections hover-effect">
+			<h1 class="section-title" id="contactMe"> Contact me </h1>
+			<hr />
+			<form action="/oo" method="post">
+				<div>
+					<label class="button-label" for="title"> Title: </label>
+				</div>
+				<div>
+					<textarea class="title-box" id="title" name="title" required></textarea>
+				</div>
+				<br>
+				<div>
+					<label class="button-label" for="message"> Message: </label>
+				</div>
+				<div>
+					<textarea class="message-box" id="message" name="message" required></textarea>
+				</div>
+				<br>
+
+				<button class="button" type="submit"> send message </button>
+				<button class="button" type="reset"> reset </button>
+			</form>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<h5 class="footer-text"> © 2026 Laial Issa </h5>
+	</footer>
 
 </body>
-</html> 
+
+</html>
